@@ -1,0 +1,10 @@
+<h2>Listas de planetas</h2>
+
+<ng-container *ngFor="let locationIterator of locations">
+<div class="locations">
+
+        <app-location-card [location]="locationIterator"></app-location-card>
+
+</div>
+
+</ng-container>
