@@ -1,0 +1,41 @@
+
+
+<!-- personajes los pinto abajo -->
+
+<div >
+    <!-- no me genera un elemento html -->
+    <ng-container *ngFor="let character of CharacterList">
+
+        
+        
+        <!-- character entre [] es el nombre de la variable que tendrá valor el recorido for  -->
+        <app-character [character]="character"></app-character> 
+        <!-- lo importo @input en el componente del hijo (character) -->
+    </ng-container>
+        
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- pinto información del primer elemento, recuerda que vienes del ts component de -->
+
+<!-- <div>
+   pinta el name sólo 
+    {{CharacterList.results[0].name}} 
+
+    {{CharacterList.results[0].image}} 
+    
+    {{CharacterList.results[0].status}} 
+</div> -->
