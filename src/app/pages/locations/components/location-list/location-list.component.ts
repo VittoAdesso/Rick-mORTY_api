@@ -26,10 +26,11 @@ export class LocationListComponent implements OnInit {
 
       // para mapar necesito hace éstos pasos
       const results : Ilocation[] = data.results; 
-      const formatResult = results.map(( {name, type}) => ({ // le doy de parámetro lo que quiero recibir 
+      const formatResult = results.map(( {name, type, dimension}) => ({ // le doy de parámetro lo que quiero recibir 
         //le digo lo que le devolveré
         name, 
-        type
+        type, 
+        dimension
 
       })); 
 
